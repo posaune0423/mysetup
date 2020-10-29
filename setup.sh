@@ -1,7 +1,6 @@
 #!/bin/sh
 
 
-
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -12,7 +11,6 @@ else
   touch ~/.zshrc
   echo export HOMEBREW_CASK_OPTS="--appdir=/Applications" >> ~/.zshrc
 fi
-
 
 
 # install oackages from brew
@@ -32,10 +30,3 @@ brew install mas
 
 # install Xcode
 mas install 497799835
-
-
-
-
-
-
-
