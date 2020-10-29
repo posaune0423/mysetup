@@ -18,12 +18,12 @@ fi
 # install oackages from brew
 brew install tree
 brew install vim
+brew install neofetch
 
 
 # install desktop apps
 brew cask install iterm2
 brew cask install alfred
-brew cask install iterm
 brew cask install visual-studio-code
 brew cask install sequel-pro
 
