@@ -13,7 +13,7 @@ else
 fi
 
 
-# install oackages from brew
+# install cli commands from brew
 brew install tree
 brew install vim
 brew install neofetch
