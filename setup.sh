@@ -18,6 +18,9 @@ brew install tree
 brew install vim
 brew install neofetch
 
+# install packages from brew
+brew install pyenv
+brew install pyenv-virtualenv
 
 # install desktop apps
 brew cask install iterm2
