@@ -17,6 +17,7 @@ fi
 brew install tree
 brew install tig
 brew install vim
+brew install hub
 brew install neofetch
 
 
