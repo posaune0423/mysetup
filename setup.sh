@@ -13,6 +13,10 @@ else
 fi
 
 
+# install zsh plugin
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
+
 # install cli commands from brew
 brew install tree
 brew install tig
