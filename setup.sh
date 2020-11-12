@@ -15,8 +15,10 @@ fi
 
 # install cli commands from brew
 brew install tree
+brew install tig
 brew install vim
 brew install neofetch
+
 
 # install packages from brew
 brew install pyenv
