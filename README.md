@@ -15,16 +15,16 @@ $ sh setup.sh
 
 - Key Repeat
 
-System Preferences > Keyboard
+  System Preferences > Keyboard
 
 - Dock
 
-System Preferences > Dock
+  System Preferences > Dock
 
 - Scroll Speed
 
-System Preferences > Accessibility > Pointer Controll > Trackpad Options
+  System Preferences > Accessibility > Pointer Controll > Trackpad Options
 
 - Install cmd ei-kana
 
-download from [here](https://ei-kana.appspot.com/)
+  download from [here](https://ei-kana.appspot.com/)
