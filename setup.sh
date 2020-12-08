@@ -35,6 +35,7 @@ brew install iterm2 --cask
 brew install alfred --cask
 brew install visual-studio-code --cask
 brew install sequel-pro --cask
+brew install google-japanese-ime --cask
 
 
 brew install mas
