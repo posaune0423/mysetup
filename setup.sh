@@ -31,10 +31,10 @@ brew install pyenv
 brew install pyenv-virtualenv
 
 # install desktop apps
-brew cask install iterm2
-brew cask install alfred
-brew cask install visual-studio-code
-brew cask install sequel-pro
+brew install iterm2 --cask
+brew install alfred --cask
+brew install visual-studio-code --cask
+brew install sequel-pro --cask
 
 
 brew install mas
