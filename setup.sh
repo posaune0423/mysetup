@@ -36,6 +36,7 @@ brew install alfred --cask
 brew install visual-studio-code --cask
 brew install sequel-pro --cask
 brew install google-japanese-ime --cask
+brew install cmd-eikana --cask
 
 
 brew install mas
