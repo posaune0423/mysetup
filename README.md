@@ -24,7 +24,3 @@ $ sh setup.sh
 - Scroll Speed
 
   System Preferences > Accessibility > Pointer Controll > Trackpad Options
-
-- Install cmd ei-kana
-
-  download from [here](https://ei-kana.appspot.com/)
