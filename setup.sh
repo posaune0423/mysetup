@@ -41,5 +41,6 @@ brew install cmd-eikana --cask
 
 brew install mas
 
-# install Xcode
-mas install 497799835
+# install by mas
+mas install 497799835    # Xcode
+mas install 1429033973   # RunCat
