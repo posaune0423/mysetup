@@ -27,8 +27,11 @@ brew install neofetch
 
 
 # install packages from brew
-brew install pyenv
-brew install pyenv-virtualenv
+# brew install pyenv
+# brew install pyenv-virtualenv
+brew pipenv
+brew yarn
+
 
 # install desktop apps
 brew install iterm2 --cask
