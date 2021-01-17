@@ -9,6 +9,8 @@ I hope this would help somebody trying to automate setup of OSX environmenet in 
 - increase key repeat
 - allocate CapsLock key to Control key
 - Tap to click
+- three finger drag
+- save schreenshot as jpg
 - increase Tracking Sped : 8.5
 - increase Mouse Speed : 8.5
 - show hidden files in finder
@@ -29,13 +31,18 @@ I hope this would help somebody trying to automate setup of OSX environmenet in 
 - yarn
 
 ### Application
-- iterm2
-- alfred
-- visual-studio-code
 - google-japanese-ime
 - cmd-eikana
-- Xcode
+- alfred
 - RunCat
+- Xcode
+- iterm2
+- visual-studio-code
+- docker
+- chrome
+-
+
+
 
 
 
