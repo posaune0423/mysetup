@@ -3,8 +3,7 @@
 
 # OS settings
 
-# make tab key able to move focus
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3  # make tab key able to move focus
 
 # increase key repeat
 defaults write NSGlobalDomain KeyRepeat -int 2
