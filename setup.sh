@@ -42,7 +42,7 @@ if [ ! -e /usr/local/bin/brew ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-if [ -f ~/.zshrc];then
+if [ -f ~/.zshrc ]; then
   echo export HOMEBREW_CASK_OPTS="--appdir=/Applications" >> ~/.zshrc
 else
   touch ~/.zshrc
@@ -78,7 +78,9 @@ brew install google-japanese-ime --cask
 brew install cmd-eikana --cask
 
 
-brew install mas
+if [ ! -e /usr/local/bin/mas ]; then
+  brew install mas
+fi
 
 # install by mas
 mas install 497799835    # Xcode
