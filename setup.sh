@@ -83,6 +83,8 @@ brew yarn
 brew install cmd-eikana --cask
 brew install google-japanese-ime --cask
 brew install chrome --cask
+brew install slack --cask
+brew install zoomus --cask
 brew install alfred --cask
 brew install iterm2 --cask
 brew install visual-studio-code --cask
