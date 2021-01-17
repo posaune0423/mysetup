@@ -27,6 +27,12 @@ defaults write -g com.apple.trackpad.scaling 8.5  # set trackpad speed
 defaults write -g com.apple.mouse.scaling 8.5  # set mouse speed
 defaults write -g com.apple.mouse.tapBehavior -int 1 # when tapping, let it click
 
+## Three finger drag
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true && \
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+
+
+defaults write com.apple.screencapture type jpg # save screanshot as jpg extension
 defaults write com.apple.finder AppleShowAllFiles YES  # show hidden files in finder
 defaults write com.apple.dock autohide -bool true  # Automatically hide or show the Dock
 defaults write com.apple.dock persistent-apps -array  # Wipe all app icons from the Dock
@@ -35,6 +41,9 @@ defaults write com.apple.dock magnification -bool true  # Magnificate the Dock
 # resstart these apps for applying above settings
 killall Finder
 killall Dock
+
+
+sudo shutdown -r now # restart once to activate above setings
 
 
 # install homebrew if not installed
@@ -71,11 +80,14 @@ brew yarn
 
 
 # install desktop apps
-brew install iterm2 --cask
-brew install alfred --cask
-brew install visual-studio-code --cask
-brew install google-japanese-ime --cask
 brew install cmd-eikana --cask
+brew install google-japanese-ime --cask
+brew install chrome --cask
+brew install alfred --cask
+brew install iterm2 --cask
+brew install visual-studio-code --cask
+brew install docker --cask
+
 
 
 if [ ! -e /usr/local/bin/mas ]; then
