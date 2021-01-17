@@ -2,7 +2,7 @@
 this is a repository for making it easier and faster to setupa a new OSX environment.
 
 
-## What this settings covers
+## What this setting covers
 
 ### OS Settings
 - increase key repeat
