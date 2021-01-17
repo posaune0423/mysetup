@@ -1,5 +1,6 @@
 # mysetup
 this is a repository for making it easier and faster to setupa a new OSX environment.
+I hope this would help somebody trying to automate setup of OSX environmenet in some way 😊
 
 
 ## What this setting covers
@@ -46,4 +47,5 @@ $ git clone https://github.com/posaune0423/mysetup.git
 $ cd mysetup
 
 $ sh setup.sh
+  That's it ! 👍
 ```
