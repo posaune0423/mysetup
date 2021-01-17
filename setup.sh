@@ -37,9 +37,10 @@ killall Finder
 killall Dock
 
 
-# install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+# install homebrew if not installed
+if [ ! -e /usr/local/bin/brew ]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 if [ -f ~/.zshrc];then
   echo export HOMEBREW_CASK_OPTS="--appdir=/Applications" >> ~/.zshrc
