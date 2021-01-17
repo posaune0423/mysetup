@@ -40,9 +40,6 @@ I hope this would help somebody trying to automate setup of OSX environmenet in 
 - visual-studio-code
 - docker
 - chrome
--
-
-
 
 
 
