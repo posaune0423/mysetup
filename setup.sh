@@ -67,7 +67,8 @@ brew install zsh-syntax-highlighting
 # install cli commands from brew
 brew install tree
 brew install tig
-brew install vim
+brew install nvim
+brew install tmux
 brew install hub
 brew install neofetch
 brew install peco
