@@ -87,10 +87,12 @@ brew install chrome --cask
 brew install slack --cask
 brew install zoomus --cask
 brew install alfred --cask
+brew install spectacle --cask
 brew install iterm2 --cask
 brew install visual-studio-code --cask
 brew install sequel-ace --cask
 brew install docker --cask
+
 
 
 
