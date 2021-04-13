@@ -72,7 +72,7 @@ brew install tmux
 brew install hub
 brew install neofetch
 brew install peco
-
+brwe install exa
 
 # install packages from brew
 # brew install pyenv
