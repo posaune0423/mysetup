@@ -80,6 +80,9 @@ brwe install exa
 brew pipenv
 brew yarn
 
+# install utils
+brew install ffmpeg
+
 
 # install desktop apps
 brew install cmd-eikana --cask
