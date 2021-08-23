@@ -96,6 +96,7 @@ brew install iterm2 --cask
 brew install visual-studio-code --cask
 brew install sequel-ace --cask
 brew install docker --cask
+brew install monitorcontrol --cask
 
 
 
