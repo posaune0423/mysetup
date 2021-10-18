@@ -75,9 +75,9 @@ brew install peco
 brwe install exa
 
 # install packages from brew
-# brew install pyenv
 # brew install pyenv-virtualenv
-brew pipenv
+brew install pyenv
+brew install nodebrew
 brew yarn
 
 # install utils
