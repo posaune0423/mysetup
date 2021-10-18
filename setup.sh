@@ -85,11 +85,10 @@ brew install ffmpeg
 
 
 # install desktop apps
-brew install cmd-eikana --cask
 brew install google-japanese-ime --cask
-brew install chrome --cask
+brew install google-chrome --cask
 brew install slack --cask
-brew install zoomus --cask
+brew install zoom --cask
 brew install alfred --cask
 brew install spectacle --cask
 brew install iterm2 --cask
@@ -106,5 +105,4 @@ if [ ! -e /usr/local/bin/mas ]; then
 fi
 
 # install by mas
-mas install 497799835    # Xcode
 mas install 1429033973   # RunCat
