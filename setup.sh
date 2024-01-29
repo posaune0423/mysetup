@@ -38,13 +38,6 @@ defaults write com.apple.dock autohide -bool true  # Automatically hide or show 
 defaults write com.apple.dock persistent-apps -array  # Wipe all app icons from the Dock
 defaults write com.apple.dock magnification -bool true  # Magnificate the Dock
 
-# resstart these apps for applying above settings
-killall Finder
-killall Dock
-
-
-sudo shutdown -r now # restart once to activate above setings
-
 
 # install homebrew if not installed
 if [ ! -e /usr/local/bin/brew ]; then
@@ -106,3 +99,10 @@ fi
 
 # install by mas
 mas install 1429033973   # RunCat
+
+
+# resstart these apps for applying above settings
+killall Finder
+killall Dock
+
+sudo shutdown -r now
