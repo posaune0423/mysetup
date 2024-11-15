@@ -26,6 +26,15 @@ check_status() {
 
 echo "Configuring macOS settings..."
 
+# Enable Touch ID for sudo
+echo "Enabling Touch ID for sudo commands..."
+if ! grep -q "pam_tid.so" /etc/pam.d/sudo; then
+    sudo sed -i '' '2i\
+auth       sufficient     pam_tid.so\
+' /etc/pam.d/sudo
+fi
+check_status "Touch ID for sudo configuration"
+
 # Keyboard settings
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
