@@ -33,6 +33,20 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 check_status "Keyboard settings"
 
+# Swap semicolon and colon
+if [ ! -d ~/Library/KeyBindings ]; then
+    mkdir -p ~/Library/KeyBindings
+fi
+
+cat > ~/Library/KeyBindings/DefaultKeyBinding.dict << EOF
+{
+    "$\U003B" = ("insertText:", ":");
+    "~$\U003B" = ("insertText:", ";");
+}
+EOF
+
+check_status "Keyboard settings and key swap"
+
 # CapsLock to Control
 for keyboard_id in $(ioreg -c AppleEmbeddedKeyboard -r | grep -Eiw "VendorID|ProductID" | awk '{ print $4 }' | paste -s -d'-\n' -)-0; do
     defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboard_id} -array-add "
