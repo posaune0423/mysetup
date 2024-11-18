@@ -150,6 +150,8 @@ gui_apps=(
     "google-chrome"
     "slack"
     "zoom"
+    "telegram"
+    "discord"
     "alfred"
     "spectacle"
     "wezterm"
