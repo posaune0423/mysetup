@@ -20,6 +20,12 @@ I hope this would help somebody trying to automate setup of OSX environment in s
 - Wipe all app icons from the Dock
 - Magnify the Dock
 
+### Libraries & Languages
+
+- Rust
+- Cairo / Dojo
+- Starkli
+
 ### homebrew packages
 
 - zsh-completions
@@ -35,6 +41,9 @@ I hope this would help somebody trying to automate setup of OSX environment in s
 - tmux
 - peco
 - eza
+- jq
+- sqlite3
+- bash
 
 ### Application
 

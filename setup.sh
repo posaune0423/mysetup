@@ -7,7 +7,11 @@ set -e
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until script has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+done 2>/dev/null &
 
 echo "Starting macOS setup script..."
 
@@ -47,7 +51,7 @@ if [ ! -d ~/Library/KeyBindings ]; then
     mkdir -p ~/Library/KeyBindings
 fi
 
-cat > ~/Library/KeyBindings/DefaultKeyBinding.dict << EOF
+cat >~/Library/KeyBindings/DefaultKeyBinding.dict <<EOF
 {
     "$\U003B" = ("insertText:", ":");
     "~$\U003B" = ("insertText:", ";");
@@ -105,7 +109,7 @@ if ! command -v brew &>/dev/null; then
 
     # Add Homebrew to PATH for Apple Silicon Macs
     if [[ $(uname -m) == 'arm64' ]]; then
-        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>~/.zprofile
         eval "$(/opt/homebrew/bin/brew shellenv)"
     fi
 fi
@@ -127,6 +131,9 @@ check_status "Homebrew update"
 # CLI tools
 echo "Installing CLI tools..."
 cli_tools=(
+    "bash"
+    "jq"
+    "sqlite3"
     "bat"
     "tree"
     "tig"
@@ -136,12 +143,40 @@ cli_tools=(
     "neofetch"
     "peco"
     "eza"
+    "coreutils"
+    "curl"
+    "git"
+    "asdf"
 )
 
 for tool in "${cli_tools[@]}"; do
     brew install "$tool"
 done
 check_status "CLI tools installation"
+
+# Install Rust
+echo "Installing Rust..."
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source "$HOME/.cargo/env"
+check_status "Rust installation"
+
+# Setup Starkli
+echo "Setting up Starkli..."
+curl https://get.starkli.sh | sh
+source ~/.zshrc
+starkliup
+check_status "Starkli installation"
+
+# Install Cairo / Dojo
+echo "Installing Cairo / Dojo..."
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >>${ZDOTDIR:-~}/.zshrc
+asdf plugin add scarb
+asdf plugin add dojo
+asdf install scarb latest
+asdf install dojo latest
+asdf global scarb latest
+asdf global dojo latest
+check_status "Cairo / Dojo installation"
 
 # GUI Applications
 echo "Installing GUI applications..."
