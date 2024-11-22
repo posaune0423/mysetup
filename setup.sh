@@ -143,6 +143,7 @@ cli_tools=(
     "neofetch"
     "peco"
     "eza"
+    "protobuf"
     "coreutils"
     "curl"
     "git"

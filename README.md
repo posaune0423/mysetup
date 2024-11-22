@@ -44,6 +44,7 @@ I hope this would help somebody trying to automate setup of OSX environment in s
 - jq
 - sqlite3
 - bash
+- protobuf
 
 ### Application
 
