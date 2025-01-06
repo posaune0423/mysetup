@@ -5,6 +5,32 @@ I hope this would help somebody trying to automate setup of OSX environment in s
 
 ## What this setting covers
 
+### Applications
+
+#### Editor
+
+- [Cursor](https://www.cursor.com/)
+
+#### Terminal
+
+- [Ghostty](https://ghostty.org/)
+
+#### Browser
+
+- [Zen Browser](https://zen-browser.app/)
+
+#### Other
+
+- google-japanese-ime
+- google-chrome
+- slack
+- zoom
+- alfred
+- spectacle
+
+- docker
+- monitorcontrol
+
 ### OS Settings
 
 - Enable dark mode
@@ -45,19 +71,6 @@ I hope this would help somebody trying to automate setup of OSX environment in s
 - sqlite3
 - bash
 - protobuf
-
-### Application
-
-- google-japanese-ime
-- google-chrome
-- slack
-- zoom
-- alfred
-- spectacle
-- wezterm
-- cursor
-- docker
-- monitorcontrol
 
 ## Usage
 
