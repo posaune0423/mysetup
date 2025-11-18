@@ -71,6 +71,7 @@ I hope this would help somebody trying to automate setup of OSX environment in s
 - sqlite3
 - bash
 - protobuf
+- [yazi](https://yazi-rs.github.io/)
 
 ## Usage
 
