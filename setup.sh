@@ -42,8 +42,8 @@ check_status "Touch ID for sudo configuration"
 # Keyboard settings
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 check_status "Keyboard settings"
 
 # CapsLock to Control
